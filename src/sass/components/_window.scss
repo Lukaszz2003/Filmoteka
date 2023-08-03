@@ -1,0 +1,11 @@
+.window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 90%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+
+  pointer-events: all;
+}

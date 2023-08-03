@@ -1,0 +1,117 @@
+.about-window {
+  overflow-y: auto;
+
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+
+  font-size: 10px;
+  height: auto;
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+
+    background: none;
+    border: none;
+    color: rgb(64, 60, 60);
+
+    &:hover,
+    &:focus {
+      color: $primaryColor;
+      background: none;
+    }
+
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+
+  &__title {
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc, 1px -1px 1px #ccc, -1px 1px 1px #ccc,
+      -1px -1px 1px #ccc;
+
+    &:hover,
+    &:focus {
+      color: $primaryColor;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      z-index: -1;
+      width: 100%;
+      margin: auto;
+      border-bottom: 1px solid black;
+      bottom: -0.3em;
+      transition: all 1s;
+    }
+
+    &:hover::after {
+      width: 0%;
+      border-bottom-width: 1px;
+    }
+
+    @include tablet {
+      padding-top: 15px;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @include tablet {
+      gap: 30px;
+      margin-bottom: 35px;
+    }
+
+    @include desktop {
+      gap: 45px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.member-card {
+  max-width: 50%;
+  text-align: center;
+
+  &__images {
+    position: relative;
+  }
+
+  &__photo {
+    height: auto;
+    width: 100%;
+  }
+
+  &__github {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  @include tablet {
+    max-width: 100px;
+  }
+}
