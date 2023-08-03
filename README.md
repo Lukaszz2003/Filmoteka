@@ -2,4 +2,4 @@
 
 https://lukaszz2003.github.io/Filmoteka/
 
-Drugi projekt zespołowy tworzony podczas kursu GoIT Fullstack Developer
+Drugi projekt zespołowy tworzony podczas kursu GoIT Fullstack Developer.
