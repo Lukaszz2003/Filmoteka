@@ -1,5 +1,5 @@
 # GOIT-PROJECT-02: Filmoteka
 
-https://gregorjosh.github.io/goit-project-02/
+https://lukaszz2003.github.io/Filmoteka/
 
 Drugi projekt zespołowy tworzony podczas kursu GoIT Fullstack Developer
